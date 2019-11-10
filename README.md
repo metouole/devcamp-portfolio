@@ -1,24 +1,17 @@
-# README DEVCAMP PORTFOLIO BUILD BY METOUOLE AND UDEMY
+# DevCamp Portfolio Application build by Yves SOMDA
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a ruby on rails 6 application that allow everyone to create is own portfolio
 
-Things you may want to cover:
+### Features we are going to build
+- Real Time Chat application
+- Blog
+- Portfolio
+- Drag and Drop Interface
 
-* Ruby version
+### Code example
+'''ruby
+	def bonjour
+		puts "I love It"
+	end
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+'''
