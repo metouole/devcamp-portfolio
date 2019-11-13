@@ -5,7 +5,7 @@
 	<h5><%= portfolio.title %></h5>
 	<h5><%= portfolio.subtitle %></h5>
 	<p><%= portfolio.body %></p>
-	<%= image_tag portfolio.thumb_image %>
-	<%=  portfolio.main_image %>
+	<%= image_tag portfolio.thumb_image if !portfolio.thumb_image.nil? %>
+	<%=  portfolio.main_image unless portfolio.main_image.nil? %>
 	<hr>
 <% end %>
