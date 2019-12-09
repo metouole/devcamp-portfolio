@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Blogs</h1>
+<%= link_to 'New Blog', new_blog_path %>
 
 <table>
   <thead>
@@ -14,7 +15,7 @@
   <tbody>
     <% @blogs.each do |blog| %>
       <tr>
-        <td><%= blog.title %></td>
+        <td><%= blog.title.upcase %></td>
         <td><%= blog.body %></td>
         <td><%= link_to blog.status, toggle_status_blog_path(blog.id) %></td>
         <td><%= link_to 'Show', blog %></td>
@@ -27,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Blog', new_blog_path %>
+
