@@ -9,5 +9,11 @@
 <h3><%= @portfolio_item.main_image %></h3>
 <h3><%= @portfolio_item.thumb_image %></h3>
 
+<p>Technologie used:</p>
+<% @portfolio_item.technologies.each do |l| %>
+	<p><%= l.name %></p>
+
+<% end %>
+
 <p><%= link_to "Back To HomePage", portfolios_path %></p>
 <p><%= link_to "Edit the Item", edit_portfolio_path(@portfolio_item.id) %></p>
