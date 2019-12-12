@@ -1,5 +1,7 @@
 class Portfolio < ApplicationRecord
 	has_many :technologies
+
+	accepts_nested_attributes_for :technologies
 	include Placeholder
 	validates_presence_of :title, :subtitle, :body, :main_image
 
