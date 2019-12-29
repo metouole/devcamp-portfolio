@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'friendly_id', '~> 5.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'ostruct', '~> 0.1.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
