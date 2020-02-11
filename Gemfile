@@ -28,6 +28,8 @@ gem 'ostruct', '~> 0.1.0'
 
 gem 'bootstrap', '~> 4.4.1'
 
+gem 'petergate', '~> 2.0', '>= 2.0.1'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
