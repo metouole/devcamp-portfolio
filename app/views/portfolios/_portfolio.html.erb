@@ -3,6 +3,6 @@
 <p><%= portfolio.body %></p>
 <%= image_tag portfolio.thumb_image if !portfolio.thumb_image.nil? %>
 <%=  portfolio.main_image unless portfolio.main_image.nil? %>
-<p><%= link_to "Edit", edit_portfolio_path(portfolio.id) %></p>
-<p><%= link_to "Supprimer", portfolio_path(portfolio.id), method: :delete, data: { confirm: "Are You sure?"} %></p>
+<p><%= link_to "Edit", edit_portfolio_path(portfolio.id) if logged_in?(:site_admin) %></p>
+<p><%= link_to "Supprimer", portfolio_path(portfolio.id), method: :delete, data: { confirm: "Are You sure?"} if logged_in?(:site_admin) %></p>
 <hr>

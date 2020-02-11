@@ -16,6 +16,6 @@
 <% end %>
 
 <p><%= link_to "Back To HomePage", portfolios_path %></p>
-<p><%= link_to "Edit the Item", edit_portfolio_path(@portfolio_item.id) %></p>
+<p><%= link_to "Edit the Item", edit_portfolio_path(@portfolio_item.id) if logged_in?(:site_admin) %></p>
 
 <hr>
