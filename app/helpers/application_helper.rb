@@ -16,4 +16,8 @@ module ApplicationHelper
 	      content_tag(:p, "thank you for visiting #{session[:source]} and you are on #{layout} layout", class: "source-greeting")
 	     end 
 	end
+
+	def copyright_generator
+		MetouoleViewTool::Renderer.copyright 'SOMDA Metouole Mwinbé', 'All rights reserved'
+	end
 end
