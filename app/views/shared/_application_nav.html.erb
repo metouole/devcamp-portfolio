@@ -1,12 +1,13 @@
 <header class="masthead mb-auto">
 <div class="inner">
-  <h3 class="masthead-brand">Mwinbe SOMDA</h3>
+  <h3 class="masthead-brand">Mwinbe Metouole SOMDA</h3>
   <nav class="nav nav-masthead justify-content-center">
     <a class="nav-link active" href="<%= root_path %>">Home</a>
     <a class="nav-link" href="<%= about_path %>">About</a>
     <a class="nav-link" href="<%= blogs_path %>">Blog</a>
     <a class="nav-link" href="<%= portfolios_path %>">Portfolio</a>
     <a class="nav-link" href="<%= contact_path %>">Contact</a>
+    <%= login_helper 'nav-link' %>
     <!--<%= link_to "angular", contact_path, class: "nav-link" %>-->
   </nav>
 </div>

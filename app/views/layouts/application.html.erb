@@ -20,20 +20,11 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    
-    <%= login_helper %>
-  
-
       <%= yield %>
 
 
     <%= source_helper("application") %>
-    
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p><%= copyright_generator %></p>
-      </div>
-    </footer>
+    <%= render 'shared/application_footer' %>
   </div>
   </body>
 </html>
