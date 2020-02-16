@@ -1,21 +1,31 @@
-<h2>Show THis Portfolio</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-7">
+			<%= image_tag @portfolio_item.main_image %>
+		</div>	
+		<div class="col-md-5">
+			<h3><%= @portfolio_item.title %></h3>
+			<h3><%= @portfolio_item.subtitle %></h3>
+
+			<p><%= @portfolio_item.body %></p>
+
+			<h3><%= @portfolio_item.thumb_image %></h3>
+
+			<p>Technologie used:</p>
+			<% @portfolio_item.technologies.each do |l| %>
+				<p><%= l.name %></p>
+
+			<% end %>
+
+			<p><%= link_to "Back To HomePage", portfolios_path, class: 'btn btn-secondary' %>
+			
+				<%  if logged_in?(:site_admin) %>
+					<%= link_to "Edit the Item", edit_portfolio_path(@portfolio_item.id), class: 'btn btn-primary' %>
+				<% end %>
+					
+			</p>
+		</div>
+	</div>
+</div>
 
 
-<%= image_tag @portfolio_item.main_image %>
-<h3><%= @portfolio_item.title %></h3>
-<h3><%= @portfolio_item.subtitle %></h3>
-
-<p><%= @portfolio_item.body %></p>
-
-<h3><%= @portfolio_item.thumb_image %></h3>
-
-<p>Technologie used:</p>
-<% @portfolio_item.technologies.each do |l| %>
-	<p><%= l.name %></p>
-
-<% end %>
-
-<p><%= link_to "Back To HomePage", portfolios_path %></p>
-<p><%= link_to "Edit the Item", edit_portfolio_path(@portfolio_item.id) if logged_in?(:site_admin) %></p>
-
-<hr>
