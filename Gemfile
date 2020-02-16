@@ -30,6 +30,10 @@ gem 'bootstrap', '~> 4.4.1'
 
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+
+gem 'kaminari', '~> 1.2'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
