@@ -1,33 +1,47 @@
+<div class="card ">
+  <div class="card-body">
+    <h5 class="card-title">Portfolio Form</h5>
+    <p class="card-text">
+      <%= form_with(model: portfolio_item, local: true) do |form| %>
+      <div class="row"> 
+       <div class="col-md-6">
+         <div class="form-group">
+            <%= form.label :title %>
+            <%= form.text_field :title, class: "form-control" %>
+          </div>
 
-<%= form_with(model: portfolio_item, local: true) do |form| %>
-  
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+           <div class="form-group">
+            <%= form.label :subtitle %>
+            <%= form.text_field :subtitle, class: "form-control" %>
+          </div>
+       </div> 
+        
+       <div class="col-md-6">
+        <div class="form-group">
+          <%= form.label :body %>
+          <%= form.text_area :body, class: "form-control", rows: 10 %>
+        </div>
+      </div>
+      </div>
+      
+        <div class="form-group">
+          <h5 class="card-title">Technologies</h5>
+            <p class="card-text">
+              <%= form.fields_for :technologies do |technology_form| %>
+                    <%= technology_form.label :name %>
+                    <%= technology_form.text_field :name, class: "form-control" %>
+              <% end %>
+
+            </p>
+        </div>
+
+
+
+        <div class="form-group">
+          <%= form.submit "save portfolio Item", class: 'btn btn-success ' %>
+          <%= link_to "Back", portfolios_path, class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+      </p>
   </div>
-
-   <div class="field">
-    <%= form.label :subtitle %>
-    <%= form.text_field :subtitle %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
-
-  <div class="field">
-    <%= form.fields_for :technologies do |technology_form| %>
-        <li>
-          <%= technology_form.label :name %>
-          <%= technology_form.text_field :name %>
-        </li>
-    <% end %>
-  </div>
-
-
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>
