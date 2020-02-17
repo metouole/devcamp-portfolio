@@ -1,11 +1,7 @@
 <div class="col-sm-4 offset-md-1 py-4">
   <h4 class="text-white">Menu</h4>
   <ul class="list-unstyled">
-    <li><a href="<%= root_path %>" class="text-white">Home</a></li>
-    <li><a href="<%= about_path %>" class="text-white">About</a></li>
-    <li><a href="<%= blogs_path %>" class="text-white">Blog</a></li>
-    <li><a href="<%= portfolios_path %>" class="text-white">Portfolio</a></li>
-    <li><a href="<%= contact_path %>" class="text-white">Contact</a></li>
+    <%= nav_helper 'text-white', 'li' %>
     <%= login_helper 'text-white' %>
   </ul>
 </div>

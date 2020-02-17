@@ -2,11 +2,7 @@
 
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-between">
-      <a class="p-2 text-muted" href="<%= root_path %>">Home</a>
-      <a class="p-2 text-muted" href="<%= about_path %>">About</a>
-      <a class="p-2 text-muted" href="<%= blogs_path %>">Blog</a>
-      <a class="p-2 text-muted" href="<%= portfolios_path %>">Portfolio</a>
-      <a class="p-2 text-muted" href="<%= contact_path %>">Contact</a>
+      <%= nav_helper 'p-2 text-muted', 'a' %>
       <%= login_helper 'p-2 text-muted' %>
     </nav>
   </div>
