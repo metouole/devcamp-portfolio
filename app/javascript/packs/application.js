@@ -7,14 +7,23 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-
-//require("./jquery/dist/jquery.js")
-//require("@html5sortable/dist/html5sortable")
+require("jquery")
+require("jquery-ui")
 import './bootstrap_custom.js'
-import './html5sortable.js'
-//import './html5sortable/dist/html5sortable.js'
 
-//= require jquery-ui
+$(function(){
+  $('.sortable').sortable();
+});
+
+//= require jquery
+//= require jquery3
+//= require jquery-ui/widgets/sortable
+//= require rails_sortable
+//= require bootstrap-sprockets
+//= require_tree . # will add html.sortable
+
+// Bulletins Drag & Drop Sortable
+
 
 
 

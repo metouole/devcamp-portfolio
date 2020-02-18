@@ -1,6 +1,6 @@
 <% if logged_in?(:site_admin) %>
 <%= link_to "Create New Item", new_portfolio_url, class: 'btn btn-primary mt-3'  %>
 <% end %>
-<div class="row">
+<div class="row sortable">
 	<%= render @portfolio_items %>
 </div>
