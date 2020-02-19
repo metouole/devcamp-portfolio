@@ -26,6 +26,11 @@ gem 'friendly_id', '~> 5.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'ostruct', '~> 0.1.0'
 
+gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+gem 'carrierwave-aws', '~> 1.4'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+
 gem 'bootstrap', '~> 4.4.1'
 
 gem 'petergate', '~> 2.0', '>= 2.0.1'
