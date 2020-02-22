@@ -38,11 +38,12 @@
       
         <div class="form-group">
           <h5 class="card-title">Technologies</h5>
-            <p class="card-text">
-              <%= form.fields_for :technologies do |technology_form| %>
-                    <%= technology_form.label :name %>
-                    <%= technology_form.text_field :name, class: "form-control" %>
+
+            <%= form.fields_for :technologies do |technology_form| %>
+                    <%= render 'technology_fields', f: technology_form %>
               <% end %>
+            <p class="card-text">
+              <%= link_to_add_association "Add Technologie", form, :technologies %>
 
             </p>
         </div>
