@@ -63,4 +63,15 @@ module ApplicationHelper
 		"active" if current_page? path
 	end
 
+	def notification_type_format(flash_type)
+	  case flash_type
+	  when 'alert'
+	    'warning'
+	  when 'notice'
+	    'info'
+	  else
+	    flash_type.to_s
+	  end
+	end
+
 end

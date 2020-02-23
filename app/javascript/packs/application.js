@@ -11,6 +11,8 @@ require("jquery")
 require("jquery-ui")
 import './bootstrap_custom.js'
 import "cocoon"
+import './alerts.js'
+
 
 
 
@@ -69,6 +71,8 @@ $(document).on('page:load', ready);
 //= require_tree . # will add html.sortable
 
 // Bulletins Drag & Drop Sortable
+
+
 
 
 

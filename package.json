@@ -8,10 +8,12 @@
     "@rails/webpacker": "^4.2.2",
     "bootstrap": "4.3.1",
     "cocoon": "github:nathanvda/cocoon#c24ba53",
+    "gritter": "https://github.com/RobinBrouwer/gritter.git",
     "html5sortable": "^0.9.17",
     "jquery": "^3.4.1",
     "jquery-ui-dist": "^1.12.1",
     "popper.js": "^1.16.1",
+    "sweetalert2": "^9.8.2",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
