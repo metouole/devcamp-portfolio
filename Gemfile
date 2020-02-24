@@ -44,6 +44,8 @@ gem 'kaminari', '~> 1.2'
 
 gem 'cocoon', '~> 1.2', '>= 1.2.14'
 
+gem 'twitter', '~> 7.0'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
