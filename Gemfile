@@ -46,6 +46,8 @@ gem 'cocoon', '~> 1.2', '>= 1.2.14'
 
 gem 'twitter', '~> 7.0'
 
+gem 'redis', '~> 4.1', '>= 4.1.3'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
