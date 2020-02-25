@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   	end
   end
   root to: 'pages#home'
+  get 'tech_news', to: 'pages#tech_news'
 end
