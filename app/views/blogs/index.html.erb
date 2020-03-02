@@ -1,6 +1,7 @@
 <% if logged_in?(:site_admin) %>
   <%= link_to 'Write New Blog', new_blog_path, class: 'btn btn-outline-success'  %>
 <% end %>
+	<%= link_to 'Topics', topics_path, class: 'btn btn-outline-success'  %>
 
 <div class="mt-5">
 <%= render @blogs %>
