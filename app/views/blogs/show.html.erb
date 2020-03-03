@@ -5,6 +5,17 @@
   <%= @blog.title %>
 </p>
 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    
+    <%= link_to 'Home', root_path, class: 'breadcrumb-item' %>
+    <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item' %>
+    <li class="breadcrumb-item active" aria-current="page"><%= @blog.title %></li>
+
+  </ol>
+  
+</nav>
+
 <p>
   <strong>Body:</strong>
   <%= markdown @blog.body %>
