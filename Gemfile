@@ -46,7 +46,8 @@ gem 'cocoon', '~> 1.2', '>= 1.2.14'
 
 gem 'twitter', '~> 7.0'
 
-
+gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem 'redcarpet', '~> 3.5'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
