@@ -6,17 +6,99 @@
 		
 		<div class="col-md-4">
 			<%= image_tag "profile2.jpg", width: 300, alt: 'photo of my' %>
+			<div class="skills">
+				
+				<% @skills.each do |skill| %>
+				<h3><%= skill.title %></h3>
+					<div class="progress">
+					  <div class="progress-bar bg-info" role="progressbar" style="width: <%= skill.percent_utilized %>%" aria-valuenow="<%= skill.percent_utilized %>" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				<% end %>
+			</div>
 		</div>
 
 		<div class="col-md-8 ">
-			<p class="lead">Je me nomme Yves Ghislain Métouolé Mwinbé, j'ai 27 ans et je suis ingénieur Support Monétique au GIM-UEMOA.
+			<p>Je me nomme Yves Ghislain Métouolé Mwinbé, j'ai 27 ans et je suis ingénieur Support Monétique au GIM-UEMOA.
 			Assurer le bon déroulement des transactions monétiques, la mise à
 			disposition des fichiers de comptabilisations des membres du GIM-UEMOA.
 			Assurer le traitement batch des Flux Monétiques du GIM-UEMOA.
 			Appliquer le référentiel de contrôle des activités de support monétiques du GIM-UEMOA.
-			Assurer la prise en compte et le traitement des requêtes de support monétique soumises via le Centre de services du GIM-UEMOA et les documenter.
-			Mettre en place des Reporting réguliers des traitements des dysfonctionnements des activités monétiques du GIM-UEMOA.
+			Assurer la prise en compte et le traitement des requêtes de support monétique soumises via le Centre de services du GIM-UEMOA et les documenter.</p>
+			<p>Mettre en place des Reporting réguliers des traitements des dysfonctionnements des activités monétiques du GIM-UEMOA.
 			Participer à la veille monétique et prendre en compte les évolutions des normes et des règles monétiques régionales et internationales.</p>
+
+			<p>
+				<button 
+				class="btn btn-primary"
+				type="button" 
+				data-toggle="collapse"
+				data-target="#jobHistory"
+				area-expanded="false"
+				area-controler="jobHistory"
+				>
+					Job History
+				</button>
+
+				<button 
+				class="btn btn-success"
+				type="button" 
+				data-toggle="collapse"
+				data-target="#education"
+				area-expanded="false"
+				area-controler="education"
+				>
+					Education
+				</button>
+			</p>
+			<p>
+				<div class="collapse" id="jobHistory">
+					<div class="card card-block jobscard">
+						<strong>01/06/2019-à nos jours : Ingénieur Support Monétique Junior GIM-UEMOA.</strong>
+						Tâches : Assurer le bon déroulement des transactions monétiques, la mise à disposition des fichiers de comptabilisations des membres du GIM-UEMOA.
+						Assurer le traitement batch des Flux Monétiques du GIM-UEMOA.
+						Appliquer le référentiel de contrôle des activités de support monétiques du GIM-UEMOA.
+						Assurer la prise en compte et le traitement des requêtes de support monétique soumises via le Centre de services du GIM-UEMOA et les documenter.
+						Mettre en place des Reporting réguliers des traitements des dysfonctionnements des activités monétiques du GIM-UEMOA.
+						Participer à la veille monétique et prendre en compte les évolutions des normes et des règles monétiques régionales et internationales.
+						Assistant de projet dans la connexion SFTP avec VISA, et Interlocuteur les réseaux étrangers dans le cadre des litiges entre VISA/MasterCard et GIM. 
+
+					</div>
+
+					<div class="card card-block jobscard">
+						<strong>01/07/2016-31/05/2019 :  Assistant Ingénieur Support Monétique au GIM UEMOA à la Direction Technique et de la Production Informatique dans la Cellule Support. </strong>
+						Tâches : Je suis responsable du dispatching des tickets en fonction des criticités ainsi que des particularités des différentes cellules. Je m’assure aussi que les requêtes urgentes sont rapidement prises en charge afin d’assurer toujours la qualité de service. 
+						Je suis responsable de la génération mensuelle des indicateurs de qualités des banques de la sous-région, à savoir les taux de disponibilité des interfaces ainsi que les rejets techniques et fonctionnels. J’assure la mise à jour de l’application de génération des statistiques et je développe de nouveaux indicateurs tels que le taux de disponibilité GAB.
+						Je suis en charge du recyclage des transactions télécollectées non compensées et aussi du recyclage des présentations et chargeback rejetés par MasterCard.Je maitrise le traitement Batch qui permet la génération des fichiers LIS contenant l’activité monétiques des membres ainsi que le traitement des chargebacks, des transactions ACI, des fichiers solde et aussi des créations et annulation de carte. Je maitrise et comprend très aisément le principe de création des cartes prépayées et de leur intégration sur l’extranet.
+						Je maitrise et comprend très bien le fonctionnement des cartes prépayées notamment la régularisation des suspens existants sur le solde des cartes prépayées. J’ai une connaissance très poussées de l’analyse des suspens des cartes prépayées ainsi que l’analyse des opérations de paiement, retrait, préautorisation, quasi cash, recharge, transfert, les reversal, les ajustements etc.
+						Je maitrise le fonctionnement des automates bancaires tels que le GAB recharge des données, saisie des clés, installation du GAB ainsi que les TPE télécollecte des transactions, maintenance et mise en service. Analyse des transactions effectuées sur les automates bancaires. Maitrise des transactions ONUS, Interbancaires, Internationales. 
+						Mon quotidien est l’assistance des membres par les canaux suivant la messagerie email, assistance téléphonique, via le support web. Je suis parfaitement à l’aise avec les clients et avec le temps j’ai appris à gérer les humeurs des clients et j’ai appris l’importance de l’écoute client. J’ai appris aussi à anticiper sur les besoins des membres et aussi à remonter les plaintes courantes et récurrentes afin que nous puissions prendre les mesures nécessaires afin de corriger l’incident définitivement.
+						J’ai aussi été en charge du développement d’application de gestion des régulations manuelles. J’ai développé des solutions permettant d’automatiser et faciliter le travail quotidien de l’équipe support. Je fais la veille technologique, je participe à la proposition et au développement de solution pouvant améliorer et automatiser certains processus métier. Je participe activement à la rédaction de certaines procédures métier afin de faciliter le transfert de connaissance.
+ 
+
+					</div>
+				</div>
+
+				<div class="collapse" id="education">
+					<div class="card card-block educard">
+						<strong>2019 : Certificate in Digital Money from the Fletcher School at Tufts University</strong>
+						Knowledges : The mechanics of digital payments, Business models and risks, competition and disruption, Understanding customers, Designing customer experiences, making a survey about digital finance in our country, Financial inclusion, Mobile and data environments, safety and security, Regulating Digital Financial services, Industry collaboration.
+
+					</div>
+
+					<div class="card card-block educard">
+						<strong>2016-2018: Mastère 2 en génie logiciel à L’institut Supérieur d’informatique de                                      
+                                DAKAR
+								</strong>
+						Connaissances acquise : JEE, Développement d’application mobile, programmation
+                                          Système, architecture logicielle, Business Intelligence, outils de 
+                                          Développement Oracle, sécurité des SI, WinDev, ERP(ODOO), 
+                                          PLSQL, Intelligence artificielle, Gestion de projet informatique, 
+			      							Android, JAVA, Python.
+
+
+					</div>
+				</div>
+			</p>
 			
 		</div>
 	</div>
