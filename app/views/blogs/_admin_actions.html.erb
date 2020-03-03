@@ -1,0 +1,7 @@
+<% if logged_in?(:site_admin) %>
+	<nav class="breadcrumb">
+		<%= link_to blog.status, toggle_status_blog_path(blog.id), class: 'btn btn-outline-dark', style: blog_status_color(blog) %> 
+		<%= link_to fa_icon('pencil-square-o'), edit_blog_path(blog), class: 'btn btn-secondary'  %> 
+		<%= link_to fa_icon('trash'), blog, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'  %>
+	</nav>
+<% end %>
