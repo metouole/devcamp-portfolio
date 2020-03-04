@@ -1,6 +1,9 @@
 @import "bootstrap";
 
-
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src:font-url('Poppins-Regular.ttf');
+}
 /*
  * Globals
  */
@@ -30,6 +33,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
